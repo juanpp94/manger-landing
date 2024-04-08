@@ -8,7 +8,7 @@ import { ButtonsStyle, ObjButton } from '../../types/color';
 })
 export class CtaButtonComponent {
   @Input() description: string = "Get Started";
-  @Input() buttonStyle: string = "call-to-action-bright-red";
+  @Input() buttonStyle: string = "bright-red";
   buttonsStyleList: ObjButton = ButtonsStyle;
 
 

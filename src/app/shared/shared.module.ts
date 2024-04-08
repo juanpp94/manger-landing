@@ -29,7 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     BulletComponent,
     TestimonialCardComponent,
     BannerComponent,
-    FooterComponent
+    FooterComponent,
+    FeatureComponent
   ]
 })
 export class SharedModule { }
