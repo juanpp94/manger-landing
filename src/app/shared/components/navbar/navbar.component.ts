@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  menu: string[] = ['Pricing','Product','About Us','Careers','Community'];
+
 }

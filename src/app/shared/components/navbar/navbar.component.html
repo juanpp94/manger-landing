@@ -1,10 +1,13 @@
-<nav class="flex justify-between px-5 items-center h-20">
+<nav class="flex justify-between px-5 items-center h-20 md:justify-around">
     <picture id="logo">
         <img src="../../../../assets/logo.svg" alt="logo" >
     </picture>
-    <div  id="sidebar">
+    <div class="block md:hidden"  id="sidebar">
         <div class="bg-black w-10 h-1 mb-1"></div>
         <div class="bg-black w-10 h-1 mb-1"></div>
         <div class="bg-black w-10 h-1 mb-1"></div>
     </div>
+    <ul class="hidden md:flex space-x-6 font-bold text-base ">
+        <li *ngFor="let menuItem of menu">{{menuItem}}</li>
+    </ul>
 </nav>
