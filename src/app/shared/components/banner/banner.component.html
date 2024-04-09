@@ -1,5 +1,6 @@
-<div class="mt-24">
-    <h2 [ngClass]="styles" class="px-8 py-24 text-center font-bold text-4xl ">
+<div [ngClass]="styles" class="mt-12 py-4 md:py-16 md:grid grid-cols-2 space-x-16 ">
+    <h2  class="px-8 py-12   font-bold text-center md:text-left text-4xl md:text-5xl ">
         {{information}}
     </h2>
+    <app-cta-button [description]="'Get Started'" [buttonStyle]="'vary-light-gray'"></app-cta-button>
 </div>

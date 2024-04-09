@@ -9,6 +9,7 @@ import { ButtonsStyle, ObjButton } from '../../types/color';
 export class CtaButtonComponent {
   @Input() description: string = "Get Started";
   @Input() buttonStyle: string = "bright-red";
+  @Input() containerStyle: string = "header-button-container";
   buttonsStyleList: ObjButton = ButtonsStyle;
 
 
@@ -20,6 +21,14 @@ export class CtaButtonComponent {
       return this.buttonsStyleList[this.buttonStyle];
     } else {
       return {};
+    }
+  }
+
+  get containerStyles() {
+    if(this.buttonsStyleList[this.containerStyle]) {
+      return this.buttonsStyleList[this.containerStyle]
+    } else {
+      return {}
     }
   }
 

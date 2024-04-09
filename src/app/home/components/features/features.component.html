@@ -1,8 +1,8 @@
-<section class="mt-20">
-    <h2 class="text-3xl font-bold text-center px-4 pt-8">What’s different about Manage?</h2>
-    <p class="text-dark-grayish-blue text-lg mt-8 text-center px-6 pb-10">
+<section class="mt-20 md:grid grid-cols-2">
+    <h2 class="text-3xl font-bold text-center px-4 pt-8 md:row-start-1 col-start-1">What’s different about Manage?</h2>
+    <p class="text-dark-grayish-blue text-lg   px-6 pb-10 mt-8 md:mt-32 text-center md:text-left  md:row-start-1 col-start-1">
         Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
     </p>
 
-    <app-feature *ngFor="let feature of features" [number]="feature.number" [name]="feature.name" [description]="feature.description" ></app-feature>
+    <app-feature class="col-start-2" *ngFor="let feature of features" [number]="feature.number" [name]="feature.name" [description]="feature.description" ></app-feature>
 </section>

@@ -1,9 +1,9 @@
-<footer class="bg-black space-y-10 pt-16 pb-8">
-    <div class="flex justify-center gap-5">
-        <input class="rounded-full p-4 w-44" type="search" placeholder="Updates in your inbox">
-        <button class="bg-bright-red text-white px-8 rounded-full">GO</button>
+<footer class="bg-black space-y-10 py-16 md:grid grid-cols-3">
+    <div class="flex justify-center gap-5 md:col-start-3 row-start-1 mt-8">
+        <input class="rounded-full p-4 w-44 md:w-24 h-12 lg:w-48" type="search" placeholder="Updates in your inbox">
+        <button class="bg-bright-red text-white px-8 rounded-full md:w-24 h-12">GO</button>
     </div>
-    <div class="grid text-white grid-cols-2  gap-y-4 place-items-center">
+    <div class="grid text-white grid-cols-2  gap-y-4 place-items-center md:col-start-2 row-start-1">
         <div class=""><span>Home</span></div>
         <div>Pricing</div>
         <div>Products</div>
@@ -13,11 +13,19 @@
         <div>Privacy Policy</div>
     </div>
 
-    <div class="flex justify-center space-x-10">
-        <picture><img src="../../../../assets/icon-facebook.svg" alt=""></picture>
-        <picture><img src="../../../../assets/icon-youtube.svg" alt=""></picture>
-        <picture><img src="../../../../assets/icon-twitter.svg" alt=""></picture>
-        <picture><img src="../../../../assets/icon-pinterest.svg" alt=""></picture>
-        <picture><img src="../../../../assets/icon-instagram.svg" alt=""></picture>
+    <div class="flex justify-center space-x-10 md:space-x-0 md:grid grid-cols-4 grid-rows-2 row-start-1 col-start-1 pt-20 place-items-center gap-y-4">
+        <picture><img class="w-8" src="../../../../assets/icon-facebook.svg" alt=""></picture>
+        <picture><img class="w-8" src="../../../../assets/icon-youtube.svg" alt=""></picture>
+        <picture><img class="w-8" src="../../../../assets/icon-twitter.svg" alt=""></picture>
+        <picture><img class="w-8" src="../../../../assets/icon-pinterest.svg" alt=""></picture>
+        <picture><img class="w-8" src="../../../../assets/icon-instagram.svg" alt=""></picture>
     </div>
+
+    <picture class="flex justify-center mt-24 md:grid row-start-1 col-start-1" id="logo">
+        <img src="../../../../assets/logo-white.svg" alt="logo" >
+    </picture>
+
+    <p class="flex justify-center text-lg text-dark-grayish-blue md:col-start-3 row-start-1 pt-16 px-8 text-right">Copyright 2020. All Rights Reserved</p>
+
+
 </footer>
