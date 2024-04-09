@@ -1,13 +1,10 @@
-import { Component } from '@angular/core';
-import { Testimonial } from 'src/app/shared/types/testimonial';
+import { Injectable } from '@angular/core';
 import { Feature } from 'src/app/shared/types/features';
 
-@Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class HomepageComponent {
+export class FeaturesHttpService {
 
   features: Feature[] = [
     {
@@ -27,11 +24,10 @@ export class HomepageComponent {
     }
    ]
 
-  testimonials: Testimonial[] = [
-    {img: "../../../../assets/avatar-ali.png", 
-    name: "Ali Bravo", 
-    testimony: "We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."
-  }
-  ]
+  constructor() { }
 
+
+  getFeatures() {
+    return this.features;
+  }
 }
